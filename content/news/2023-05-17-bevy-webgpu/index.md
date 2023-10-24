@@ -4,6 +4,7 @@ date = 2023-05-17
 [extra]
 image = "webgpu.svg"
 show_image = true
+image_alt = "WebGPU logo"
 author = "Carter Anderson"
 twitter = "cart_cart"
 github = "cart"

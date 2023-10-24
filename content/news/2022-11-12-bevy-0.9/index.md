@@ -8,6 +8,7 @@ github = "cart"
 youtube = "cartdev"
 image = "bloom_lion.png"
 show_image = true
+image_alt = "Lion sculpture with a bloom effect applied to its eyes, taken from the Sponza demo scene"
 +++
 
 Thanks to **159** contributors, **430** pull requests, community reviewers, and our [**generous sponsors**](https://github.com/sponsors/cart), I'm happy to announce the **Bevy 0.9** release on [crates.io](https://crates.io/crates/bevy)!

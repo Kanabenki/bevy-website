@@ -4,13 +4,13 @@
 }
 
 div.incorrect {
-    background-color: #542326;
+    background-color: #4d2023;
     border-left: 10px solid red;
     border-radius: 10px;
 
     .z-code,
     .z-code code {
-        background-color: #542326;
+        background-color: #4d2023;
     }
 }
 
@@ -20,7 +20,7 @@ div.incorrect {
 
 .z-comment,
 .z-punctuation.z-definition.z-comment {
-    color: #65737e;
+    color: #8996a1;
 }
 
 .z-punctuation.z-definition.z-string,
@@ -91,7 +91,7 @@ div.incorrect {
 }
 
 .z-entity.z-name.z-tag {
-    color: #e05a67;
+    color: #e46e79;
 }
 
 .z-entity.z-other.z-attribute-name {
@@ -277,4 +277,9 @@ div.incorrect {
 
 .z-variable.z-parameter.z-option {
     color: #c594c5ff;
+}
+
+// DIFF OVERRIDES
+.z-markup.z-deleted.z-diff {
+    color: #cb7d85;
 }

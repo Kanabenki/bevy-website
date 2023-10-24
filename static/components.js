@@ -29,6 +29,7 @@ function enable_image_compare() {
     let style = window.getComputedStyle(img_cmp);
     const slider = document.createElement('input');
     slider.type = "range";
+    slider.ariaLabel = "drag to compare";
     slider.min = style.getPropertyValue('--slider-min').replace('%', '');
     slider.max = style.getPropertyValue('--slider-max').replace('%', '');
     slider.value = style.getPropertyValue('--slider-value').replace('%', '');

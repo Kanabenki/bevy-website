@@ -8,6 +8,7 @@ github = "cart"
 youtube = "cartdev"
 image = "scaling_bevy.svg"
 show_image = true
+image_alt = "Balance scale icon and the bevy logo side to side"
 +++
 
 The Bevy community has grown a lot over the past couple of years. We've had over 3,642 pull requests, 599 contributors, 357,917 downloads, and 21,200 github stars. Together we've built the most popular, most used Rust game engine on the market and the [second most popular game engine on GitHub](https://github.com/topics/game-engine). Up until now, in the interest of maintaining a consistent vision and quality bar, I've kept our decision making process as small and centralized as possible. And I scaled out our leadership roles as slowly as possible. I believe this was the right call for Bevy's early days, but we are overdue for changes that bias toward more trust and development agility.

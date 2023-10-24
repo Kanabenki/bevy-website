@@ -8,6 +8,7 @@ github = "cart"
 youtube = "cartdev"
 image = "bevy_birthday.svg"
 show_image = true
+image_alt="Bevy logo with party poppers and balloons emojis"
 +++
 
 [@cart](https://www.twitter.com/cart_cart) here (Bevy's creator, lead developer, and project manager) with some exciting news:
@@ -31,7 +32,7 @@ For those who don't know, Bevy is a refreshingly simple data-driven game engine 
 * **August 20**: [The Amethyst forum post: "Bevy Engine - Addressing the elephant in the room"](https://community.amethyst.rs/t/bevy-engine-addressing-the-elephant-in-the-room/)
   * This helped establish the strengths of each project and identified various collaboration areas, marking the beginning of a fruitful relationship between the two communities.
 * **August 28**: [Reached our second funding goal ($2080 / month)](https://github.com/sponsors/cart)
-  * As of this point, I'm making "state of Washington minimum wage" working on Bevy. This marks the point where I start thinking about building and managing Bevy as "my job".  
+  * As of this point, I'm making "state of Washington minimum wage" working on Bevy. This marks the point where I start thinking about building and managing Bevy as "my job".
 * **September 19**: [Bevy 0.2](/news/bevy-0-2/)
   * A month after the initial release we dropped another big one! This included a new async task system with significantly improved performance, initial Web platform support, parallel queries, a new transform system, joystick input, and some tasty Bevy ECS performance improvements.
 * **November 3**: [Bevy 0.3](/news/bevy-0-3/)
@@ -43,7 +44,7 @@ For those who don't know, Bevy is a refreshingly simple data-driven game engine 
 * **April 14**: [The Bevy RFC process is unveiled](https://github.com/bevyengine/rfcs)
   * Inspired by the Rust RFC process, we added a way to collaboratively design and review Bevy APIs prior to implementing them. This generally isn't required, but for bigger changes it ensures we think deeply about what we are building, mitigates risk, and encodes designs and intents for future Bevy developers.
 * **June 1**: [First public release of Bevy Assets](https://twitter.com/BevyEngine/status/1399891316939448320)
-  * [Bevy Assets](https://bevyengine.org/assets/) is a public library of community developed Bevy plugins, crates, assets, games, and learning materials. The website is fed by structured toml files in the [bevy-assets repo](https://github.com/bevyengine/bevy-assets). It has its roots in the awesome-bevy repo, our old unstructured markdown document with a list of community projects. It is still hot off the presses, but we have big plans for it!  
+  * [Bevy Assets](https://bevyengine.org/assets/) is a public library of community developed Bevy plugins, crates, assets, games, and learning materials. The website is fed by structured toml files in the [bevy-assets repo](https://github.com/bevyengine/bevy-assets). It has its roots in the awesome-bevy repo, our old unstructured markdown document with a list of community projects. It is still hot off the presses, but we have big plans for it!
 * **June 24**: [Reached our third funding goal ($4000 / month)](https://github.com/sponsors/cart)
   * Reaching this goal marked the point where I started thinking about Bevy as a career. I'm not making "market rate" for my skills and I'm still making less than 1/4th what I made as a Senior Software Engineer at Microsoft, but I'm no longer "just breaking even" and I'm starting to save some money.
 * **August 2**: [Bevy hits 10,000 stars on Github](https://twitter.com/cart_cart/status/1422393321394085888)
@@ -189,7 +190,7 @@ I believe we focused on the right things. We had more "foundational" work to do 
 Going forward I plan on changing my approach to focus areas in the following ways:
 
 * We will have one or _maaaybe_ two focus areas at a time, according to the number of unknowns and our "bandwidth".
-* I will acknowledge that focus areas _need_ immediate investment from me personally, for as long as I choose to occupy the "benevolent dictator" role. If I'm not actively working to unblock people from moving forward, it can't be a focus area (by definition).  
+* I will acknowledge that focus areas _need_ immediate investment from me personally, for as long as I choose to occupy the "benevolent dictator" role. If I'm not actively working to unblock people from moving forward, it can't be a focus area (by definition).
 * If for whatever reason our focus needs to change when we discover new information, I will immediately report that out via a "focus area change".
 
 ### The Old Renderer's Mid Level APIs
@@ -232,7 +233,7 @@ Here are some of my plans for the next year:
 * **The Bevy Editor**: We will break ground on the Bevy Editor, which will be a Bevy App building on top of the "next generation Bevy UI". We will start with scene editing functionality and then build out from there.
 * **Scene Improvements**: Scenes will get support for nested scenes, a nicer scene file format, and property overloading
 * **The New Bevy Book**: The current Bevy Book hasn't changed much since its initial release and doesn't cover much more than basic Bevy ECS usage. The new Book is already in progress and will be a much more comprehensive guide to all aspects of Bevy.
-* **New Bevy ECS Features**: We will likely get some form of "reactive ECS", entity-relationship indexing, and more granular and featureful parallel system scheduling  
+* **New Bevy ECS Features**: We will likely get some form of "reactive ECS", entity-relationship indexing, and more granular and featureful parallel system scheduling
 * **Animation**: We will build a unified animation system that makes 2D and 3D animation easier and integrates naturally with the Bevy Editor
 * **2D Features**: Sprite batching, more tileset features, layers, visual / interactive tooling in the Bevy Editor
 * **3D Features**: Skeletal animation (that integrates with the Animation system), configurable / flexible / good looking shadows, at least one form of global illumination, more PBR properties, and visual / interactive tooling in the Bevy Editor

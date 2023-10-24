@@ -1,10 +1,10 @@
 .button {
-    $color-blue: #799bbb;
+    $color-blue: #446686;
 
     display: inline-flex;
     align-items: center;
     background-color: $color-blue;
-    border: 3px solid #576f86;
+    border: 3px solid #394958;
     padding: 6px 8px;
     border-radius: $border-radius;
     font-size: 1.2rem;
@@ -33,7 +33,7 @@
 
     &--pink {
         background-color: $color-pink;
-        border-color: #865767;
+        border-color: #684350;
 
         &:hover {
             background-color: darken($color-pink, 3%);

@@ -5,6 +5,7 @@ date = 2023-07-09
 author = "Bevy Contributors"
 image = "with_ssao.png"
 show_image = true
+image_alt = "Screenshot of the Sponza demo scene with SSAO enabled"
 +++
 
 Thanks to **166** contributors, **522** pull requests, community reviewers, and our [**generous sponsors**](/community/donate), we're happy to announce the **Bevy 0.11** release on [crates.io](https://crates.io/crates/bevy)!

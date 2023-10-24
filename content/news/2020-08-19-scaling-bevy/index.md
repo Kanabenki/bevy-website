@@ -8,6 +8,7 @@ github = "cart"
 youtube = "cartdev"
 image = "balance-scale.svg"
 show_image = false
+image_alt= "Balance scale icon"
 +++
 
 First, I want to take a moment to highlight just how wild the last week has been. [**Bevy was only released a week ago**](/news/introducing-bevy) and we've already hit some pretty major milestones:

@@ -8,6 +8,7 @@ github = "cart"
 youtube = "cartdev"
 image = "bevy_birthday.svg"
 show_image = true
+image_alt="Bevy logo with party poppers and balloons emojis"
 +++
 
 [@cart](https://www.twitter.com/cart_cart) here (Bevy's creator, lead developer, and project manager) with another exciting announcement:
