@@ -108,6 +108,7 @@ pub struct Section {
     pub header: Option<String>,
     pub order: Option<usize>,
     pub sort_order_reversed: bool,
+    pub skip_sitemap: bool,
 }
 
 impl Section {
@@ -196,6 +197,7 @@ fn visit_dirs(dir: PathBuf, section: &mut Section) -> io::Result<()> {
                     header: None,
                     order,
                     sort_order_reversed,
+                    skip_sitemap: true,
                 };
                 visit_dirs(path.clone(), &mut new_section)?;
                 section.content.push(CommunityNode::Section(new_section));
@@ -225,6 +227,7 @@ pub fn parse_members(community_dir: &str) -> io::Result<Section> {
         header: Some("People".to_string()),
         order: None,
         sort_order_reversed: false,
+        skip_sitemap: false,
     };
 
     visit_dirs(

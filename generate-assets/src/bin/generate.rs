@@ -72,6 +72,7 @@ struct FrontMatterAssetExtra {
     image: Option<String>,
     licenses: Option<Vec<String>>,
     bevy_versions: Option<Vec<String>>,
+    skip_sitemap: bool,
 }
 
 impl From<&Asset> for FrontMatterAsset {
@@ -85,6 +86,7 @@ impl From<&Asset> for FrontMatterAsset {
                 image: asset.image.clone(),
                 licenses: asset.licenses.clone(),
                 bevy_versions: asset.bevy_versions.clone(),
+                skip_sitemap: true,
             },
         }
     }
@@ -165,6 +167,7 @@ struct FrontMatterSection {
 struct FrontMatterSectionExtra {
     header_message: Option<String>,
     sort_order_reversed: bool,
+    skip_sitemap: bool,
 }
 
 impl From<&Section> for FrontMatterSectionExtra {
@@ -172,6 +175,7 @@ impl From<&Section> for FrontMatterSectionExtra {
         FrontMatterSectionExtra {
             header_message: section.header.clone(),
             sort_order_reversed: section.sort_order_reversed,
+            skip_sitemap: section.skip_sitemap,
         }
     }
 }

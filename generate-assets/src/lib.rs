@@ -63,6 +63,7 @@ pub struct Section {
     pub header: Option<String>,
     pub order: Option<usize>,
     pub sort_order_reversed: bool,
+    pub skip_sitemap: bool,
 }
 
 #[derive(Debug, Clone)]
@@ -119,6 +120,7 @@ pub fn parse_assets<'a>(
         header: Some("Assets".to_string()),
         order: None,
         sort_order_reversed: false,
+        skip_sitemap: false,
     };
 
     if let Some(db) = metadata_source.crates_io_db {
@@ -186,6 +188,7 @@ fn visit_dirs(
                 header: None,
                 order,
                 sort_order_reversed,
+                skip_sitemap: true,
             };
             visit_dirs(path.clone(), &mut new_section, metadata_source)?;
             section.content.push(AssetNode::Section(new_section));

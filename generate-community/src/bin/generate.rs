@@ -34,6 +34,7 @@ fn main() -> io::Result<()> {
     donate.filename = Some("donate".to_string());
     donate.header = Some("Supporting Bevy".to_string());
     donate.template = Some("donate.html".to_string());
+    donate.skip_sitemap = false;
 
     donate.content = donate.content.into_iter().filter(|node| {
         let CommunityNode::Member(member) = node else {
@@ -73,6 +74,7 @@ struct FrontMatterMemberExtra {
     steam_developer: Option<String>,
     website: Option<String>,
     roles: Option<Vec<String>>,
+    skip_sitemap: bool,
 }
 
 impl From<&Member> for FrontMatterMember {
@@ -101,6 +103,7 @@ impl From<&Member> for FrontMatterMember {
                 steam_developer: member.steam_developer.clone(),
                 website: member.website.clone(),
                 roles: member.roles.clone(),
+                skip_sitemap: true,
             },
         }
     }
@@ -171,6 +174,7 @@ struct FrontMatterSection {
 struct FrontMatterSectionExtra {
     header_message: Option<String>,
     sort_order_reversed: bool,
+    skip_sitemap: bool,
 }
 
 impl From<&Section> for FrontMatterSectionExtra {
@@ -178,6 +182,7 @@ impl From<&Section> for FrontMatterSectionExtra {
         FrontMatterSectionExtra {
             header_message: section.header.clone(),
             sort_order_reversed: section.sort_order_reversed,
+            skip_sitemap: section.skip_sitemap,
         }
     }
 }
